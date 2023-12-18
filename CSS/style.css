@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@400;800&family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500&display=swap');
+
+:root{
+    --primaryfont: 'Poppins', sans-serif;
+    --seceondaryfont: 'PT Sans', sans-serif;
+    --seceondarycolor:#353535;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,ul,p,span,ol{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--primaryfont);
+}
+
+nav .navbar-toggler{
+    border: 0;
+    box-shadow: none;!important
+}
+
+#mymenu ul li a{
+color: #353535;
+font-family: var(--primaryfont);
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: 200%; 
+padding: 18px 22px 5px;
+position: relative;
+}
+
+#mymenu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--seceondarycolor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.30;
+}
+
+#mymenu ul li:hover a::after{
+    width: 100%;
+
+}
